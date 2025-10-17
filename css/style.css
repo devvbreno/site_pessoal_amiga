@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER - #01256E */
+body {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #0a4ed5;
+}
+
+header {
+    /* background-color: #01256E; */
+    background-image: linear-gradient(to bottom, #01256E, #172554, #1e3a8a);
+    display: flex;
+    gap: 50px;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Nunito Sans", Inter, sans-serif;
+    font-weight: 500;
+    box-shadow: 0px 1px 10px 3px black;
+    margin-bottom: 1px;
+    transition: height 500ms;
+    position: relative;
+}
+
+
+header h1 {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-itens {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.item {
+    list-style: none;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    transition: color 250ms, border-bottom 250ms;
+    
+}
+
+.item:hover {
+    color: #94a3b8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    transition: border-bottom 250ms;
+}
+
+@keyframes BorderAnimation {
+    from {border-bottom: solid 1px #ed964009;}
+    to {border-bottom: solid 1px #ED9740;}
+}
+
+.wrapper-item:hover {
+    animation: BorderAnimation 0.5s forwards;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+
+}
+.menu-icon img{
+    width: 32px;
+    height: 32px;
+}
+
+.banner {
+    width: 100vw;
+    height: auto;
+    background-color: #0a4ed5;
+}
+
+.celular {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+@keyframes Dropdown {
+    from {heigth: 64px;}
+    to {height: 466px;}
+}
+.open {
+    display: block;
+}
+
+.logo {
+    cursor: pointer;
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.logo-link {
+    width: fit-content;
+    height: fit-content;
+
+}
+
+
+@media (max-width: 730px) {
+
+    *{
+        overflow-x: hidden;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .zap-icon {
+        display: block;
+        position: fixed;
+        z-index: 3;
+}
+
+    .container{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .title-wrapper, .title, .text-1, .text-2 {
+        overflow-y: hidden;
+        overflow-X: hidden;
+    }
+    
+    .logo {
+        position: relative;
+        width: 120px;
+        height: auto;
+        margin: 0;
+        cursor: pointer;
+    }
+    .menu-icon {
+        display: inline;
+        position: absolute;
+        top: 5px;
+    }
+    .desktop{display: none;}
+    .nav-bar {display: none; height: 4rem;}
+    .nav-itens {display: none;}
+    .celular {display: inline;}
+
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: #01256E;
+        height: max-content;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+    }
+
+    header h1 {
+        margin-top: 10px;
+    }
+
+    .menu-icon {
+        margin-top: 15px;
+    }
+
+    .nav-mobile {
+        justify-content: center;
+        gap: 0;
+        align-items: center;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.footer {
+    width: 100vw;
+    height: 4rem;
+    background-color: #01256E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy {
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+.insta-icon {
+    width: 72px;
+    height: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 5;
+}
